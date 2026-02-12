@@ -29,7 +29,7 @@ const config = convict({
   serviceName: {
     doc: 'Api Service Name',
     format: String,
-    default: 'cdp-node-backend-template'
+    default: 'grants-ui-dal-stub'
   },
   cdpEnvironment: {
     doc: 'The CDP environment the app is running in. With the addition of "local" for local development',
