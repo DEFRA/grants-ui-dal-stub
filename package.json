@@ -61,5 +61,8 @@
     "prettier": "3.7.4",
     "vitest": "4.0.16",
     "vitest-fetch-mock": "0.4.5"
+  },
+  "overrides": {
+    "minimatch": "^10.2.2"
   }
 }
