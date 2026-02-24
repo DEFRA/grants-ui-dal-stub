@@ -32,8 +32,8 @@ export async function loadBusinessData(sbi, crn) {
     )
 
     return {
-      ...land,
-      customer
+      ...land.data,
+      ...customer
     }
   } catch (err) {
     if (err.code === 'ENOENT') {

@@ -20,9 +20,7 @@ const graphql = {
     const businessData = await loadBusinessData(sbi, crn)
 
     return {
-      data: {
-        business: businessData
-      }
+      data: businessData
     }
   }
 }
