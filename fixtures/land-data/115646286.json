@@ -1,0 +1,49 @@
+{
+  "data": {
+    "business": {
+      "sbi": "115646286",
+      "organisationId": "5624837",
+      "land": {
+        "parcels": [
+          {
+            "parcelId": "8781",
+            "sheetId": "SD6351"
+          },
+          {
+            "parcelId": "8774",
+            "sheetId": "SD6352"
+          }
+        ]
+      },
+      "info": {
+        "name": "Thomas Caldwell",
+        "reference": "6094813725",
+        "email": {
+          "address": "thomas.caldwell@caldwellfarmlincolnshire.com.test"
+        },
+        "phone": {
+          "mobile": "+44 7944 678901",
+          "landline": "01507 624839"
+        },
+        "address": {
+          "line1": "Caldwell Farm",
+          "line2": "Wolds View Lane",
+          "line3": null,
+          "line4": null,
+          "line5": null,
+          "street": "Wolds View Lane",
+          "city": "Louth",
+          "postalCode": "LN11 8QP",
+          "uprn": "",
+          "buildingName": "Caldwell Farm",
+          "buildingNumberRange": null,
+          "county": "Lincolnshire",
+          "dependentLocality": null,
+          "doubleDependentLocality": null,
+          "flatName": null,
+          "pafOrganisationName": "Caldwell Farm"
+        }
+      }
+    }
+  }
+}

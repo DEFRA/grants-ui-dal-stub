@@ -1,0 +1,12 @@
+{
+  "customer": {
+    "info": {
+      "name": {
+        "title": "Mr.",
+        "first": "George",
+        "middle": null,
+        "last": "Wainwright"
+      }
+    }
+  }
+}

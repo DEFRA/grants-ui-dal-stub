@@ -1,0 +1,49 @@
+{
+  "data": {
+    "business": {
+      "sbi": "115460751",
+      "organisationId": "5608374",
+      "land": {
+        "parcels": [
+          {
+            "parcelId": "8781",
+            "sheetId": "SD6351"
+          },
+          {
+            "parcelId": "8774",
+            "sheetId": "SD6352"
+          }
+        ]
+      },
+      "info": {
+        "name": "George Wainwright",
+        "reference": "8150394726",
+        "email": {
+          "address": "george.wainwright@wainwrightfarmherefordshire.com.test"
+        },
+        "phone": {
+          "mobile": "+44 7966 890123",
+          "landline": "01432 748291"
+        },
+        "address": {
+          "line1": "Wainwright Farm",
+          "line2": "Golden Valley Road",
+          "line3": null,
+          "line4": null,
+          "line5": null,
+          "street": "Golden Valley Road",
+          "city": "Hereford",
+          "postalCode": "HR2 8NL",
+          "uprn": "",
+          "buildingName": "Wainwright Farm",
+          "buildingNumberRange": null,
+          "county": "Herefordshire",
+          "dependentLocality": null,
+          "doubleDependentLocality": null,
+          "flatName": null,
+          "pafOrganisationName": "Wainwright Farm"
+        }
+      }
+    }
+  }
+}
