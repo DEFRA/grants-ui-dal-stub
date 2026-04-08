@@ -1,0 +1,49 @@
+{
+  "data": {
+    "business": {
+      "sbi": "119000002",
+      "organisationId": "5671093",
+      "land": {
+        "parcels": [
+          {
+            "parcelId": "8781",
+            "sheetId": "SD6351"
+          },
+          {
+            "parcelId": "8774",
+            "sheetId": "SD6352"
+          }
+        ]
+      },
+      "info": {
+        "name": "Patricia Holroyd",
+        "reference": "9247163850",
+        "email": {
+          "address": "patricia.holroyd@holroydfarmleicestershire.com.test"
+        },
+        "phone": {
+          "mobile": "+44 7977 901234",
+          "landline": "01572 483617"
+        },
+        "address": {
+          "line1": "Holroyd Farm",
+          "line2": "Rutland Water Lane",
+          "line3": null,
+          "line4": null,
+          "line5": null,
+          "street": "Rutland Water Lane",
+          "city": "Oakham",
+          "postalCode": "LE15 6HT",
+          "uprn": "",
+          "buildingName": "Holroyd Farm",
+          "buildingNumberRange": null,
+          "county": "Leicestershire",
+          "dependentLocality": null,
+          "doubleDependentLocality": null,
+          "flatName": null,
+          "pafOrganisationName": "Holroyd Farm"
+        }
+      }
+    }
+  }
+}

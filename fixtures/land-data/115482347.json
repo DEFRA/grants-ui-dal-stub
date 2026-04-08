@@ -1,0 +1,49 @@
+{
+  "data": {
+    "business": {
+      "sbi": "115482347",
+      "organisationId": "5612843",
+      "land": {
+        "parcels": [
+          {
+            "parcelId": "8781",
+            "sheetId": "SD6351"
+          },
+          {
+            "parcelId": "8774",
+            "sheetId": "SD6352"
+          }
+        ]
+      },
+      "info": {
+        "name": "David Hartley",
+        "reference": "3847291056",
+        "email": {
+          "address": "david.hartley@hartleyfarmyorkshire.com.test"
+        },
+        "phone": {
+          "mobile": "+44 7911 345678",
+          "landline": "01765 842193"
+        },
+        "address": {
+          "line1": "Hartley Farm",
+          "line2": "Skelton Lane",
+          "line3": null,
+          "line4": null,
+          "line5": null,
+          "street": "Skelton Lane",
+          "city": "Ripon",
+          "postalCode": "HG4 3NR",
+          "uprn": "",
+          "buildingName": "Hartley Farm",
+          "buildingNumberRange": null,
+          "county": "North Yorkshire",
+          "dependentLocality": null,
+          "doubleDependentLocality": null,
+          "flatName": null,
+          "pafOrganisationName": "Hartley Farm"
+        }
+      }
+    }
+  }
+}

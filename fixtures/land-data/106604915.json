@@ -1,0 +1,49 @@
+{
+  "data": {
+    "business": {
+      "sbi": "106604915",
+      "organisationId": "5538796",
+      "land": {
+        "parcels": [
+          {
+            "parcelId": "8781",
+            "sheetId": "SD6351"
+          },
+          {
+            "parcelId": "8774",
+            "sheetId": "SD6352"
+          }
+        ]
+      },
+      "info": {
+        "name": "Sophie Mitchell",
+        "reference": "4819203657",
+        "email": {
+          "address": "sophie.mitchell@mitchellarable.com.test"
+        },
+        "phone": {
+          "mobile": "+44 7933 567890",
+          "landline": "01768 483921"
+        },
+        "address": {
+          "line1": "Mitchell Farm",
+          "line2": "Greystoke Road",
+          "line3": null,
+          "line4": null,
+          "line5": null,
+          "street": "Greystoke Road",
+          "city": "Penrith",
+          "postalCode": "CA11 0TN",
+          "uprn": "",
+          "buildingName": "Mitchell Farm",
+          "buildingNumberRange": null,
+          "county": "Cumbria",
+          "dependentLocality": null,
+          "doubleDependentLocality": null,
+          "flatName": null,
+          "pafOrganisationName": "Fenwick Farm"
+        }
+      }
+    }
+  }
+}

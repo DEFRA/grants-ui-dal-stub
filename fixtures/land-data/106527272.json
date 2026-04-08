@@ -1,0 +1,49 @@
+{
+  "data": {
+    "business": {
+      "sbi": "106527272",
+      "organisationId": "5538291",
+      "land": {
+        "parcels": [
+          {
+            "parcelId": "8781",
+            "sheetId": "SD6351"
+          },
+          {
+            "parcelId": "8774",
+            "sheetId": "SD6352"
+          }
+        ]
+      },
+      "info": {
+        "name": "Robert Fenwick",
+        "reference": "4819203657",
+        "email": {
+          "address": "robert.fenwick@fenwicfarmcumbria.com.test"
+        },
+        "phone": {
+          "mobile": "+44 7933 567890",
+          "landline": "01768 483921"
+        },
+        "address": {
+          "line1": "Fenwick Farm",
+          "line2": "Greystoke Road",
+          "line3": null,
+          "line4": null,
+          "line5": null,
+          "street": "Greystoke Road",
+          "city": "Penrith",
+          "postalCode": "CA11 0TN",
+          "uprn": "",
+          "buildingName": "Fenwick Farm",
+          "buildingNumberRange": null,
+          "county": "Cumbria",
+          "dependentLocality": null,
+          "doubleDependentLocality": null,
+          "flatName": null,
+          "pafOrganisationName": "Fenwick Farm"
+        }
+      }
+    }
+  }
+}

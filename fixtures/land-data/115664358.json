@@ -1,0 +1,49 @@
+{
+  "data": {
+    "business": {
+      "sbi": "115664358",
+      "organisationId": "5629174",
+      "land": {
+        "parcels": [
+          {
+            "parcelId": "8781",
+            "sheetId": "SD6351"
+          },
+          {
+            "parcelId": "8774",
+            "sheetId": "SD6352"
+          }
+        ]
+      },
+      "info": {
+        "name": "Susan Bramley",
+        "reference": "7263048519",
+        "email": {
+          "address": "susan.bramley@bramleyfarmderbyshire.com.test"
+        },
+        "phone": {
+          "mobile": "+44 7922 456789",
+          "landline": "01335 362847"
+        },
+        "address": {
+          "line1": "Bramley Farm",
+          "line2": "Tissington Lane",
+          "line3": null,
+          "line4": null,
+          "line5": null,
+          "street": "Tissington Lane",
+          "city": "Ashbourne",
+          "postalCode": "DE6 1RH",
+          "uprn": "",
+          "buildingName": "Bramley Farm",
+          "buildingNumberRange": null,
+          "county": "Derbyshire",
+          "dependentLocality": null,
+          "doubleDependentLocality": null,
+          "flatName": null,
+          "pafOrganisationName": "Bramley Farm"
+        }
+      }
+    }
+  }
+}
