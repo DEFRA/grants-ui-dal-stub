@@ -1,0 +1,49 @@
+{
+  "data": {
+    "business": {
+      "sbi": "113593357",
+      "organisationId": "1",
+      "land": {
+        "parcels": [
+          {
+            "parcelId": "8781",
+            "sheetId": "SD6351"
+          },
+          {
+            "parcelId": "8774",
+            "sheetId": "SD6352"
+          }
+        ]
+      },
+      "info": {
+        "name": "Mellor & Sons",
+        "reference": "1100943757",
+        "email": {
+          "address": "patricia.mellor@mellorandsons.com.test"
+        },
+        "phone": {
+          "mobile": "+44 7712 334891",
+          "landline": "01729 851204"
+        },
+        "address": {
+          "line1": "Brackenfold Farm",
+          "line2": "Littondale Road",
+          "line3": null,
+          "line4": null,
+          "line5": null,
+          "street": "Littondale Road",
+          "city": "Skipton",
+          "postalCode": "BD23 5QH",
+          "uprn": "981124620011",
+          "buildingName": "Brackenfold Farm",
+          "buildingNumberRange": null,
+          "county": "North Yorkshire",
+          "dependentLocality": null,
+          "doubleDependentLocality": null,
+          "flatName": null,
+          "pafOrganisationName": "Mellor & Sons"
+        }
+      }
+    }
+  }
+}

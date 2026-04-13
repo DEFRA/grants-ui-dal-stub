@@ -1,0 +1,49 @@
+{
+  "data": {
+    "business": {
+      "sbi": "107173507",
+      "organisationId": "2",
+      "land": {
+        "parcels": [
+          {
+            "parcelId": "8781",
+            "sheetId": "SD6351"
+          },
+          {
+            "parcelId": "8774",
+            "sheetId": "SD6352"
+          }
+        ]
+      },
+      "info": {
+        "name": "Ackroyd Grazing Co",
+        "reference": "1100943838",
+        "email": {
+          "address": "derek.ackroyd@ackroydgrazing.com.test"
+        },
+        "phone": {
+          "mobile": "+44 7834 112673",
+          "landline": "01756 720483"
+        },
+        "address": {
+          "line1": "Moorside Farm",
+          "line2": "Grassington Lane",
+          "line3": null,
+          "line4": null,
+          "line5": null,
+          "street": "Grassington Lane",
+          "city": "Grassington",
+          "postalCode": "BD23 5AW",
+          "uprn": "981124620022",
+          "buildingName": "Moorside Farm",
+          "buildingNumberRange": null,
+          "county": "North Yorkshire",
+          "dependentLocality": null,
+          "doubleDependentLocality": null,
+          "flatName": null,
+          "pafOrganisationName": "Ackroyd Grazing Co"
+        }
+      }
+    }
+  }
+}
