@@ -6,6 +6,31 @@
         "first": "Patricia",
         "middle": null,
         "last": "Mellor"
+      },
+      "email": {
+        "address": "patricia.mellor@mellorandsons.com.test"
+      },
+      "phone": {
+        "mobile": "+44 7712 334891",
+        "landline": "01729 851204"
+      },
+      "address": {
+        "line1": "2 Dales View Cottage",
+        "line2": "Arncliffe",
+        "line3": null,
+        "line4": null,
+        "line5": null,
+        "street": "Arncliffe",
+        "city": "Skipton",
+        "postalCode": "BD23 5QE",
+        "uprn": "981124620022",
+        "buildingName": "Dales View Cottage",
+        "buildingNumberRange": "2",
+        "county": "North Yorkshire",
+        "dependentLocality": null,
+        "doubleDependentLocality": null,
+        "flatName": null,
+        "pafOrganisationName": null
       }
     }
   }

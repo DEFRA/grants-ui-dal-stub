@@ -46,8 +46,18 @@
           "doubleDependentLocality": null,
           "flatName": null,
           "pafOrganisationName": "Mellor & Sons"
+        },
+        "vat": "GB123456789",
+        "type": {
+          "code": 101443,
+          "type": "Farmer"
         }
-      }
+      },
+      "countyParishHoldings": [
+        {
+          "cphNumber": "18/542/0039"
+        }
+      ]
     }
   }
 }
