@@ -1,0 +1,189 @@
+{
+  "data": {
+    "business": {
+      "sbi": "106933321",
+      "organisationId": "106933321",
+      "land": {
+        "parcels": [
+          {
+            "parcelId": "9202",
+            "sheetId": "SX2982"
+          },
+          {
+            "parcelId": "1587",
+            "sheetId": "SX3081"
+          },
+          {
+            "parcelId": "4384",
+            "sheetId": "SX3081"
+          },
+          {
+            "parcelId": "5471",
+            "sheetId": "SX3081"
+          },
+          {
+            "parcelId": "6355",
+            "sheetId": "SX3081"
+          },
+          {
+            "parcelId": "6386",
+            "sheetId": "SX3081"
+          },
+          {
+            "parcelId": "6568",
+            "sheetId": "SX3081"
+          },
+          {
+            "parcelId": "6933",
+            "sheetId": "SX3081"
+          },
+          {
+            "parcelId": "7156",
+            "sheetId": "SX3081"
+          },
+          {
+            "parcelId": "7597",
+            "sheetId": "SX3081"
+          },
+          {
+            "parcelId": "8089",
+            "sheetId": "SX3081"
+          },
+          {
+            "parcelId": "1405",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "2409",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "3302",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "3636",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "3918",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "4126",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "4803",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "5221",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "5338",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "5812",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "6201",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "6244",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "6411",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "6415",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "6619",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "7104",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "7403",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "7414",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "7424",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "7716",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "7916",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "8422",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "8807",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "9501",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "9811",
+            "sheetId": "SX3082"
+          },
+          {
+            "parcelId": "9926",
+            "sheetId": "SX3082"
+          }
+        ]
+      },
+      "info": {
+        "name": "FH GILMAN & CO",
+        "reference": "1104401606",
+        "email": {
+          "address": "fhgilmancod@ocnamlighfh.com.test"
+        },
+        "phone": {
+          "mobile": "01234 737394",
+          "landline": "01234 404624"
+        },
+        "address": {
+          "line1": "LAMPARD BROOK FARM",
+          "line2": "DONERAILE STREET",
+          "line3": "LONGNEY",
+          "line4": "CIRENCESTER",
+          "line5": "",
+          "street": null,
+          "city": "CIRENCESTER",
+          "postalCode": "TN14 5JQ",
+          "uprn": "100062166794",
+          "buildingName": null,
+          "buildingNumberRange": null,
+          "county": null,
+          "dependentLocality": null,
+          "doubleDependentLocality": null,
+          "flatName": null,
+          "pafOrganisationName": "FH GILMAN & CO"
+        }
+      }
+    }
+  }
+}
