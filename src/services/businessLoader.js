@@ -8,12 +8,13 @@ const __dirname = path.dirname(__filename)
 const fixturesPath =
   process.env.FIXTURES_PATH || path.join(__dirname, '../../fixtures')
 
-const cache = {}
+const businessCache = {}
+const permissionsCache = {}
 
 export async function loadBusinessData(sbi, crn) {
   const key = `${sbi}-${crn}`
-  if (cache[key]) {
-    return cache[key]
+  if (businessCache[key]) {
+    return businessCache[key]
   }
 
   try {
@@ -36,7 +37,7 @@ export async function loadBusinessData(sbi, crn) {
       ...customer
     }
 
-    cache[key] = result
+    businessCache[key] = result
 
     return result
   } catch (err) {
@@ -51,8 +52,8 @@ export async function loadBusinessData(sbi, crn) {
 
 export async function loadPermissions(sbi, crn) {
   const key = `${sbi}-${crn}`
-  if (cache[key]) {
-    return cache[key]
+  if (permissionsCache[key]) {
+    return permissionsCache[key]
   }
 
   try {
@@ -63,8 +64,8 @@ export async function loadPermissions(sbi, crn) {
       )
     )
 
-    cache[key] = permission
-    return permission.permissions ?? []
+    permissionsCache[key] = permission
+    return permission ?? []
   } catch {
     return []
   }
