@@ -1,0 +1,49 @@
+{
+  "data": {
+    "business": {
+      "sbi": "115371673",
+      "organisationId": "4",
+      "land": {
+        "parcels": [
+          {
+            "parcelId": "8781",
+            "sheetId": "SD6351"
+          },
+          {
+            "parcelId": "8774",
+            "sheetId": "SD6352"
+          }
+        ]
+      },
+      "info": {
+        "name": "Bennett Family Farms",
+        "reference": "",
+        "email": {
+          "address": ""
+        },
+        "phone": {
+          "mobile": "",
+          "landline": ""
+        },
+        "address": {
+          "line1": null,
+          "line2": null,
+          "line3": null,
+          "line4": null,
+          "line5": null,
+          "street": null,
+          "city": null,
+          "postalCode": null,
+          "uprn": "",
+          "buildingName": null,
+          "buildingNumberRange": null,
+          "county": null,
+          "dependentLocality": null,
+          "doubleDependentLocality": null,
+          "flatName": null,
+          "pafOrganisationName": null
+        }
+      }
+    }
+  }
+}
