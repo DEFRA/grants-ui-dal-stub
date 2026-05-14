@@ -1,4 +1,7 @@
-import { loadBusinessData } from '../services/businessLoader.js'
+import {
+  loadBusinessData,
+  loadPermissions
+} from '../services/businessLoader.js'
 
 const graphql = {
   method: 'POST',
@@ -18,9 +21,16 @@ const graphql = {
     }
 
     const businessData = await loadBusinessData(sbi, crn)
+    const permissionGroups = await loadPermissions(sbi, crn)
 
     return {
-      data: businessData
+      data: {
+        business: { ...businessData.business },
+        customer: {
+          ...businessData.customer,
+          business: { permissionGroups: permissionGroups }
+        }
+      }
     }
   }
 }
