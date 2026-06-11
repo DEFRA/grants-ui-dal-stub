@@ -6,24 +6,24 @@
       "land": {
         "parcels": [
           {
-            "parcelId": "8335",
-            "sheetId": "NZ6300"
+            "parcelId": "9193",
+            "sheetId": "SD7560"
           },
           {
-            "parcelId": "3650",
-            "sheetId": "NZ6300"
+            "parcelId": "9205",
+            "sheetId": "SD5848"
           },
           {
-            "parcelId": "9573",
-            "sheetId": "NZ6200"
+            "parcelId": "9215",
+            "sheetId": "SD5649"
           },
           {
-            "parcelId": "9836",
-            "sheetId": "NZ6501"
+            "parcelId": "9218",
+            "sheetId": "SD6165"
           },
           {
-            "parcelId": "8980",
-            "sheetId": "NZ6501"
+            "parcelId": "9223",
+            "sheetId": "SD5763"
           }
         ]
       },
