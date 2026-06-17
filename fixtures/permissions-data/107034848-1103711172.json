@@ -1,7 +1,7 @@
 [
   {
     "id": "COUNTRYSIDE_STEWARDSHIP_APPLICATIONS",
-    "level": "VIEW",
-    "functions": ["View Applications"]
+    "level": "SUBMIT",
+    "functions": ["Submit CS Application"]
   }
 ]
