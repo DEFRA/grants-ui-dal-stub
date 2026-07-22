@@ -25,12 +25,14 @@ export async function loadBusinessData(sbi, crn) {
       )
     )
 
-    const customer = JSON.parse(
-      await fs.readFile(
-        path.join(fixturesPath, 'crn-data', `${crn}.json`),
-        'utf8'
-      )
-    )
+    const customer = crn
+      ? JSON.parse(
+          await fs.readFile(
+            path.join(fixturesPath, 'crn-data', `${crn}.json`),
+            'utf8'
+          )
+        )
+      : {}
 
     const result = {
       ...land.data,
