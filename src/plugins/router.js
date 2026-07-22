@@ -1,11 +1,11 @@
-import { graphql } from '../routes/graphql.js'
+import { graphql, graphqlSGS } from '../routes/graphql.js'
 import { health } from '../routes/health.js'
 
 const router = {
   plugin: {
     name: 'router',
     register: (server, _options) => {
-      server.route([health, graphql])
+      server.route([health, graphql, graphqlSGS])
     }
   }
 }
