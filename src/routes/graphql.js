@@ -58,7 +58,7 @@ const graphqlSGS = {
 
     const business = await loadBusinessData(sbi)
 
-    return { data: { business } }
+    return { data: business }
   }
 }
 
