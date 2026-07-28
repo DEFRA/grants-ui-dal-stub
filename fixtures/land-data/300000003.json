@@ -54,7 +54,80 @@
           "flatName": null,
           "pafOrganisationName": null
         }
-      }
+      },
+      "agreements": [
+        {
+          "contractId": "TestContractId444",
+          "name": "SFI123",
+          "status": "SIGNED",
+          "contractType": "SFI Expanded Offer",
+          "schemeYear": 2025,
+          "startDate": "2023-06-04T21:47:50.970Z",
+          "endDate": "2028-02-27T13:54:20.492Z",
+          "paymentSchedules": [
+            {
+              "optionCode": "MOR1",
+              "optionDescription": "Assess moorland and produce a written record",
+              "commitmentGroupStartDate": "2024-09-30T18:47:49.485Z",
+              "commitmentGroupEndDate": "2029-10-02T15:56:57.542Z",
+              "year": 2024,
+              "sheetName": "SD5551",
+              "parcelName": "1107",
+              "actionArea": 11.5106,
+              "actionMTL": null,
+              "actionUnits": null,
+              "parcelTotalArea": 21.5106,
+              "startDate": "2023-06-04T21:47:50.970Z",
+              "endDate": "2029-02-27T13:54:20.492Z"
+            },
+            {
+              "optionCode": "UP1",
+              "optionDescription": "Upland pasture management",
+              "commitmentGroupStartDate": "2024-09-30T18:47:49.485Z",
+              "commitmentGroupEndDate": "2029-10-02T15:56:57.542Z",
+              "year": 2024,
+              "sheetName": "SD5551",
+              "parcelName": "1107",
+              "actionArea": 11.5106,
+              "actionMTL": null,
+              "actionUnits": null,
+              "parcelTotalArea": 21.5106,
+              "startDate": "2023-06-04T21:47:50.970Z",
+              "endDate": "2029-02-27T13:54:20.492Z"
+            },
+            {
+              "optionCode": "BND1",
+              "optionDescription": "Boundary maintenance",
+              "commitmentGroupStartDate": "2024-09-30T18:47:49.485Z",
+              "commitmentGroupEndDate": "2029-10-02T15:56:57.542Z",
+              "year": 2024,
+              "sheetName": "SD5551",
+              "parcelName": "1107",
+              "actionArea": null,
+              "actionMTL": 50,
+              "actionUnits": null,
+              "parcelTotalArea": 21.5106,
+              "startDate": "2023-06-04T21:47:50.970Z",
+              "endDate": "2029-02-27T13:54:20.492Z"
+            },
+            {
+              "optionCode": "FG12",
+              "optionDescription": "Wooden field gate",
+              "commitmentGroupStartDate": "2024-09-30T18:47:49.485Z",
+              "commitmentGroupEndDate": "2029-10-02T15:56:57.542Z",
+              "year": 2024,
+              "sheetName": "SD5551",
+              "parcelName": "1107",
+              "actionArea": null,
+              "actionMTL": null,
+              "actionUnits": 1,
+              "parcelTotalArea": 21.5106,
+              "startDate": "2023-06-04T21:47:50.970Z",
+              "endDate": "2027-02-27T13:54:20.492Z"
+            }
+          ]
+        }
+      ]
     }
   }
 }
