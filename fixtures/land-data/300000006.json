@@ -54,7 +54,65 @@
           "flatName": null,
           "pafOrganisationName": null
         }
-      }
+      },
+      "agreements": [
+        {
+          "contractId": "TestContractId777",
+          "name": "SFI123",
+          "status": "IN_PROGRESS",
+          "contractType": "SFI Expanded Offer",
+          "schemeYear": 2025,
+          "startDate": "2023-06-04T21:47:50.970Z",
+          "endDate": "2028-02-27T13:54:20.492Z",
+          "paymentSchedules": [
+            {
+              "optionCode": "CMOR1",
+              "optionDescription": "Assess moorland and produce a written record",
+              "commitmentGroupStartDate": "2024-09-30T18:47:49.485Z",
+              "commitmentGroupEndDate": "2029-10-02T15:56:57.542Z",
+              "year": 2024,
+              "sheetName": "SD8241",
+              "parcelName": "1599",
+              "actionArea": 5.9224,
+              "actionMTL": null,
+              "actionUnits": null,
+              "parcelTotalArea": 5.9224,
+              "startDate": "2023-06-04T21:47:50.970Z",
+              "endDate": "2029-02-27T13:54:20.492Z"
+            },
+            {
+              "optionCode": "UPL1",
+              "optionDescription": "Moderate livestock grazing on moorland",
+              "commitmentGroupStartDate": "2024-09-30T18:47:49.485Z",
+              "commitmentGroupEndDate": "2029-10-02T15:56:57.542Z",
+              "year": 2024,
+              "sheetName": "SD8241",
+              "parcelName": "1599",
+              "actionArea": 5.9224,
+              "actionMTL": null,
+              "actionUnits": null,
+              "parcelTotalArea": 5.9224,
+              "startDate": "2023-06-04T21:47:50.970Z",
+              "endDate": "2029-06-27T13:54:20.492Z"
+            },
+            {
+              "optionCode": "OFM3",
+              "optionDescription": "Management of field margins",
+              "commitmentGroupStartDate": "2024-09-30T18:47:49.485Z",
+              "commitmentGroupEndDate": "2029-10-02T15:56:57.542Z",
+              "year": 2024,
+              "sheetName": "SD8241",
+              "parcelName": "1599",
+              "actionArea": 5.9224,
+              "actionMTL": null,
+              "actionUnits": null,
+              "parcelTotalArea": 5.9224,
+              "startDate": "2023-06-04T21:47:50.970Z",
+              "endDate": "2029-05-27T13:54:20.492Z"
+            }
+          ]
+        }
+      ]
     }
   }
 }

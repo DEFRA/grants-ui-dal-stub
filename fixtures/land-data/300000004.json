@@ -54,7 +54,80 @@
           "flatName": null,
           "pafOrganisationName": null
         }
-      }
+      },
+      "agreements": [
+        {
+          "contractId": "TestContractId555",
+          "name": "SFI123",
+          "status": "SIGNED",
+          "contractType": "SFI Expanded Offer",
+          "schemeYear": 2025,
+          "startDate": "2023-06-04T21:47:50.970Z",
+          "endDate": "2028-02-27T13:54:20.492Z",
+          "paymentSchedules": [
+            {
+              "optionCode": "CMOR1",
+              "optionDescription": "Assess moorland and produce a written record",
+              "commitmentGroupStartDate": "2024-09-30T18:47:49.485Z",
+              "commitmentGroupEndDate": "2029-10-02T15:56:57.542Z",
+              "year": 2024,
+              "sheetName": "SD8566",
+              "parcelName": "1235",
+              "actionArea": 27.6582,
+              "actionMTL": null,
+              "actionUnits": null,
+              "parcelTotalArea": 67.6582,
+              "startDate": "2023-06-04T21:47:50.970Z",
+              "endDate": "2029-02-27T13:54:20.492Z"
+            },
+            {
+              "optionCode": "HEF5",
+              "optionDescription": "Hedgerow management",
+              "commitmentGroupStartDate": "2024-09-30T18:47:49.485Z",
+              "commitmentGroupEndDate": "2029-10-02T15:56:57.542Z",
+              "year": 2024,
+              "sheetName": "SD8566",
+              "parcelName": "1235",
+              "actionArea": 10,
+              "actionMTL": null,
+              "actionUnits": null,
+              "parcelTotalArea": 67.6582,
+              "startDate": "2023-06-04T21:47:50.970Z",
+              "endDate": "2029-02-27T13:54:20.492Z"
+            },
+            {
+              "optionCode": "HEF6",
+              "optionDescription": "Hedgerow management",
+              "commitmentGroupStartDate": "2024-09-30T18:47:49.485Z",
+              "commitmentGroupEndDate": "2029-10-02T15:56:57.542Z",
+              "year": 2024,
+              "sheetName": "SD8566",
+              "parcelName": "1235",
+              "actionArea": 10,
+              "actionMTL": null,
+              "actionUnits": null,
+              "parcelTotalArea": 67.6582,
+              "startDate": "2023-06-04T21:47:50.970Z",
+              "endDate": "2026-07-27T13:54:20.492Z"
+            },
+            {
+              "optionCode": "HEF8",
+              "optionDescription": "Hedgerow management",
+              "commitmentGroupStartDate": "2024-09-30T18:47:49.485Z",
+              "commitmentGroupEndDate": "2029-10-02T15:56:57.542Z",
+              "year": 2024,
+              "sheetName": "SD8566",
+              "parcelName": "1235",
+              "actionArea": 10,
+              "actionMTL": null,
+              "actionUnits": null,
+              "parcelTotalArea": 67.6582,
+              "startDate": "2023-06-04T21:47:50.970Z",
+              "endDate": "2026-07-27T13:54:20.492Z"
+            }
+          ]
+        }
+      ]
     }
   }
 }
