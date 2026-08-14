@@ -154,7 +154,7 @@
       "info": {
         "reference": "1101251204",
         "email": { "address": "alportfarmi@mraftroplax.com.test" },
-        "phone": null,
+        "phone": { "mobile": "+44 7987654321" },
         "name": "Alport Farm",
         "address": {
           "line1": null,
