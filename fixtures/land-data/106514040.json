@@ -209,7 +209,9 @@
       },
       "info": {
         "reference": "1101091126",
-        "email": null,
+        "email": {
+          "address": "texels@texels-hire.com.test"
+        },
         "phone": { "mobile": "+44 7526874879" },
         "name": "Texels Hire & Contracting",
         "address": {

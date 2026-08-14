@@ -33,8 +33,10 @@
       },
       "info": {
         "reference": "1100281541",
-        "email": null,
-        "phone": null,
+        "email": {
+          "address": "m.a.scott@m-a-scott.com.test"
+        },
+        "phone": { "mobile": "+44 7123456789" },
         "name": "MA SCOTT & SON",
         "address": {
           "line1": "Meadowsbank",
