@@ -1,0 +1,11 @@
+[
+  {
+    "id": "COUNTRYSIDE_STEWARDSHIP_AGREEMENTS",
+    "level": "SUBMIT",
+    "functions": [
+      "Submit (and resubmit) a CS claim",
+      "Create and edit a CS claim",
+      "View CS Claims"
+    ]
+  }
+]
