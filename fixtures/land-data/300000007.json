@@ -54,7 +54,35 @@
           "flatName": null,
           "pafOrganisationName": null
         }
-      }
+      },
+      "agreements": [
+        {
+          "contractId": "TestContractId888",
+          "name": "SFI123",
+          "status": "SIGNED",
+          "contractType": "SFI Expanded Offer",
+          "schemeYear": 2025,
+          "startDate": "2023-06-04T21:47:50.970Z",
+          "endDate": "2026-08-28T13:54:20.492Z",
+          "paymentSchedules": [
+            {
+              "optionCode": "CSAM3",
+              "optionDescription": "Herbal Leys",
+              "commitmentGroupStartDate": "2024-09-30T18:47:49.485Z",
+              "commitmentGroupEndDate": "2026-08-28T15:56:57.542Z",
+              "year": 2024,
+              "sheetName": "SD6765",
+              "parcelName": "1649",
+              "actionArea": 10,
+              "actionMTL": null,
+              "actionUnits": null,
+              "parcelTotalArea": 11.2391,
+              "startDate": "2023-06-04T21:47:50.970Z",
+              "endDate": "2026-08-28T13:54:20.492Z"
+            }
+          ]
+        }
+      ]
     }
   }
 }
