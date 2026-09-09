@@ -35,46 +35,43 @@ describe('DAL agreement query', () => {
     await server.stop()
   })
 
-  it.each(['/graphql', '/dummy-graphql/sgs'])(
-    'serves the SBI-only agreement contract at %s',
-    async (url) => {
-      const response = await server.inject({
-        method: 'POST',
-        url,
-        payload: { query, variables: { sbi: '107365747' } }
-      })
+  it('serves the SBI-only land-grants-api agreement contract', async () => {
+    const response = await server.inject({
+      method: 'POST',
+      url: '/dummy-graphql/sgs',
+      payload: { query, variables: { sbi: '107365747' } }
+    })
 
-      expect(response.statusCode).toBe(200)
-      expect(response.result).toEqual({
-        data: {
-          business: {
-            agreements: [
-              {
-                status: 'SIGNED',
-                paymentSchedules: [
-                  {
-                    optionCode: 'CSAM3',
-                    sheetName: 'SD7858',
-                    parcelName: '5806',
-                    actionArea: 1.063,
-                    actionMTL: null,
-                    actionUnits: null,
-                    startDate: '2025-02-01T00:00:00Z',
-                    endDate: '2028-01-31T00:00:00Z'
-                  }
-                ]
-              }
-            ]
-          }
+    expect(response.statusCode).toBe(200)
+    expect(response.result).toEqual({
+      data: {
+        business: {
+          agreements: [
+            {
+              status: 'SIGNED',
+              paymentSchedules: [
+                {
+                  optionCode: 'CSAM3',
+                  sheetName: 'SD7858',
+                  parcelName: '5806',
+                  actionArea: 1.063,
+                  actionMTL: null,
+                  actionUnits: null,
+                  startDate: '2025-02-01T00:00:00Z',
+                  endDate: '2028-01-31T00:00:00Z'
+                }
+              ]
+            }
+          ]
         }
-      })
-    }
-  )
+      }
+    })
+  })
 
   it('returns an empty agreement list for a business without agreements', async () => {
     const response = await server.inject({
       method: 'POST',
-      url: '/graphql',
+      url: '/dummy-graphql/sgs',
       payload: { query, variables: { sbi: '106284736' } }
     })
 
@@ -85,13 +82,31 @@ describe('DAL agreement query', () => {
   it('returns a null business for an unknown SBI', async () => {
     const response = await server.inject({
       method: 'POST',
-      url: '/graphql',
+      url: '/dummy-graphql/sgs',
       payload: { query, variables: { sbi: '000000000' } }
     })
 
     expect(response.statusCode).toBe(200)
     expect(response.result).toEqual({ data: { business: null } })
   })
+
+  it.each([
+    ['/graphql', { sbi: '107365747' }],
+    ['/graphql', { crn: '1103623923' }],
+    ['/graphql', {}],
+    ['/dummy-graphql/sgs', {}]
+  ])(
+    'rejects missing required identifiers at %s: %j',
+    async (url, variables) => {
+      const response = await server.inject({
+        method: 'POST',
+        url,
+        payload: { query, variables }
+      })
+
+      expect(response.statusCode).toBe(400)
+    }
+  )
 
   it('preserves land and permission data for Grants UI requests with a CRN', async () => {
     const response = await server.inject({

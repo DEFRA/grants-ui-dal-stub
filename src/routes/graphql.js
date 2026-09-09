@@ -12,10 +12,6 @@ const graphql = {
     const sbi = variables?.sbi
     const crn = variables?.crn
 
-    if (sbi && !crn) {
-      return graphqlSGS.handler(request, h)
-    }
-
     if (!sbi || !crn) {
       return h
         .response({
@@ -40,11 +36,9 @@ const graphql = {
 }
 
 /**
- * Stub endpoint naively mocking DAL's graphql, used by SGS
- *
- * Assumes SBI is provided as a variable to fetch a Business. Makes no attempt to verify or respect
- * the graphql query, just returns a JSON fixture containing business data in a format desired by
- * land-grants-api, including agreements.
+ * SBI-only agreement endpoint for land-grants-api.
+ * Returns fixture agreements without executing the GraphQL query.
+ * Known businesses without agreements return an empty list; unknown businesses return null.
  */
 const graphqlSGS = {
   method: 'POST',
