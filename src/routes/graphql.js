@@ -12,6 +12,10 @@ const graphql = {
     const sbi = variables?.sbi
     const crn = variables?.crn
 
+    if (sbi && !crn) {
+      return graphqlSGS.handler(request, h)
+    }
+
     if (!sbi || !crn) {
       return h
         .response({
@@ -56,9 +60,13 @@ const graphqlSGS = {
         .code(400)
     }
 
-    const business = await loadBusinessData(sbi)
+    const { business } = await loadBusinessData(sbi)
 
-    return { data: business }
+    return {
+      data: {
+        business: business ? { agreements: business.agreements ?? [] } : null
+      }
+    }
   }
 }
 

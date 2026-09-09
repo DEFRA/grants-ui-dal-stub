@@ -105,11 +105,37 @@ git config --global core.autocrlf false
 
 ## API endpoints
 
-| Endpoint             | Description                    |
-| :------------------- | :----------------------------- |
-| `GET: /health`       | Health                         |
-| `GET: /example    `  | Example API (remove as needed) |
-| `GET: /example/<id>` | Example API (remove as needed) |
+| Endpoint                  | Description                                                                                                                               |
+| :------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------- |
+| `GET /health`             | Health                                                                                                                                    |
+| `POST /graphql`           | Grants UI business/customer queries with `variables.sbi` and `variables.crn`; land-grants-api agreement queries with `variables.sbi` only |
+| `POST /dummy-graphql/sgs` | SBI-only agreement response for land-grants-api                                                                                           |
+
+The agreement response matches land-grants-api's `GetBusiness` query:
+`data.business.agreements[].status` and `paymentSchedules[]`, containing
+`optionCode`, `sheetName`, `parcelName`, `actionArea`, `actionMTL`, `actionUnits`,
+`startDate` and `endDate`. `actionArea` is in hectares, `actionMTL` in metres and
+`actionUnits` is a count; unused quantity fields are `null`. A known business
+without agreements returns `agreements: []`; an unknown SBI returns `business: null`.
+Like the existing stub endpoints, these return fixture data rather than executing
+a general GraphQL schema.
+
+### CLIG3 Scenario 8
+
+Use the existing test login CRN `1103623923`, SBI `107365747`, and parcel
+`SD7858-5806`. Its DAL fixture contains a `SIGNED` CSAM3 agreement covering
+the full **1.063 hectares**, from 1 February 2025 to 31 January 2028.
+The fixture uses a parcel without seeded database agreements to avoid
+double-counting agreements when land-grants-api combines database and DAL data.
+
+With DAL enabled, the live land-grants-api returns zero available hectares
+for CLIG3 on this parcel. Without the DAL fixture, it returns 1.063 hectares.
+This verifies the API input for Scenario 8; checking that the UI hides CLIG3
+is a separate journey assertion.
+
+For the local Docker stack, point land-grants-api at
+`http://grants-ui-dal-stub:3008/graphql`, with `FEATURE_USE_DAL=true` and
+`DAL_USE_ENTRA_AUTH=false`.
 
 ## Development helpers
 
