@@ -105,11 +105,55 @@ git config --global core.autocrlf false
 
 ## API endpoints
 
-| Endpoint             | Description                    |
-| :------------------- | :----------------------------- |
-| `GET: /health`       | Health                         |
-| `GET: /example    `  | Example API (remove as needed) |
-| `GET: /example/<id>` | Example API (remove as needed) |
+| Endpoint                  | Description                                                                            |
+| :------------------------ | :------------------------------------------------------------------------------------- |
+| `GET /health`             | Health                                                                                 |
+| `POST /graphql`           | Grants UI business/customer queries requiring both `variables.sbi` and `variables.crn` |
+| `POST /dummy-graphql/sgs` | SBI-only agreement response for land-grants-api                                        |
+
+The agreement response matches land-grants-api's `GetBusiness` query:
+`data.business.agreements[].status` and `paymentSchedules[]`, containing
+`optionCode`, `sheetName`, `parcelName`, `actionArea`, `actionMTL`, `actionUnits`,
+`startDate` and `endDate`. `actionArea` is in hectares, `actionMTL` in metres and
+`actionUnits` is a count; unused quantity fields are `null`. A known business
+without agreements returns `agreements: []`; an unknown SBI returns `business: null`.
+Like the existing stub endpoints, these return fixture data rather than executing
+a general GraphQL schema.
+
+### CLIG3 Scenario 8
+
+TGC-1580 Scenario 8: when a previous agreement contains an incompatible action
+covering the entire parcel, CLIG3 must not be displayed on the action-selection page.
+
+Use the existing test login CRN `1103623923`, SBI `107365747`, and parcel
+`SD7858-5806`. Its DAL fixture contains a `SIGNED` CSAM3 agreement covering
+the full **1.063 hectares**, from 1 February 2025 to 31 January 2028.
+The fixture uses a parcel without seeded database agreements to avoid
+double-counting agreements when land-grants-api combines database and DAL data.
+
+Expected API behaviour with DAL enabled: CLIG3 has zero available hectares on
+this parcel. Without the DAL fixture, the expected availability is 1.063 hectares.
+The UI must hide CLIG3 on initial selection; that is a separate journey assertion.
+
+In the Grants UI local `.env`, set:
+
+```env
+DAL_API_ENDPOINT=http://grants-ui-dal-stub:3008/dummy-graphql/sgs
+FEATURE_USE_DAL=true
+DAL_USE_ENTRA_AUTH=false
+```
+
+The `land-grants-backend` service in `compose.land-grants.yml` must forward
+these variables; `.env` values alone do not enter a container:
+
+```yaml
+FEATURE_USE_DAL: ${FEATURE_USE_DAL:-false}
+DAL_API_ENDPOINT: ${DAL_API_ENDPOINT}
+DAL_USE_ENTRA_AUTH: ${DAL_USE_ENTRA_AUTH:-false}
+```
+
+Recreate `land-grants-backend` after changing these settings. The Entra bypass
+is for local/dev testing only.
 
 ## Development helpers
 

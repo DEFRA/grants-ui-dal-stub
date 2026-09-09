@@ -36,11 +36,9 @@ const graphql = {
 }
 
 /**
- * Stub endpoint naively mocking DAL's graphql, used by SGS
- *
- * Assumes SBI is provided as a variable to fetch a Business. Makes no attempt to verify or respect
- * the graphql query, just returns a JSON fixture containing business data in a format desired by
- * land-grants-api, including agreements.
+ * SBI-only agreement endpoint for land-grants-api.
+ * Returns fixture agreements without executing the GraphQL query.
+ * Known businesses without agreements return an empty list; unknown businesses return null.
  */
 const graphqlSGS = {
   method: 'POST',
@@ -56,9 +54,13 @@ const graphqlSGS = {
         .code(400)
     }
 
-    const business = await loadBusinessData(sbi)
+    const { business } = await loadBusinessData(sbi)
 
-    return { data: business }
+    return {
+      data: {
+        business: business ? { agreements: business.agreements ?? [] } : null
+      }
+    }
   }
 }
 

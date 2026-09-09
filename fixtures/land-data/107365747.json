@@ -3,6 +3,23 @@
     "business": {
       "sbi": "107365747",
       "organisationId": "5478814",
+      "agreements": [
+        {
+          "status": "SIGNED",
+          "paymentSchedules": [
+            {
+              "optionCode": "CSAM3",
+              "sheetName": "SD7858",
+              "parcelName": "5806",
+              "actionArea": 1.063,
+              "actionMTL": null,
+              "actionUnits": null,
+              "startDate": "2025-02-01T00:00:00Z",
+              "endDate": "2028-01-31T00:00:00Z"
+            }
+          ]
+        }
+      ],
       "land": {
         "parcels": [
           { "parcelId": "5623", "sheetId": "SD7858" },
