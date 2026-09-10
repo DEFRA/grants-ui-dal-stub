@@ -3,6 +3,38 @@
     "business": {
       "sbi": "106514040",
       "organisationId": "5456600",
+      "agreements": [
+        {
+          "status": "SIGNED",
+          "paymentSchedules": [
+            {
+              "optionCode": "CLIG3",
+              "sheetName": "SK0971",
+              "parcelName": "5761",
+              "actionArea": 0.6116,
+              "actionMTL": null,
+              "actionUnits": null,
+              "startDate": "2025-01-01T00:00:00Z",
+              "endDate": "2027-12-31T00:00:00Z"
+            }
+          ]
+        },
+        {
+          "status": "SIGNED",
+          "paymentSchedules": [
+            {
+              "optionCode": "CLIG3",
+              "sheetName": "SK0971",
+              "parcelName": "4561",
+              "actionArea": 0.0025,
+              "actionMTL": null,
+              "actionUnits": null,
+              "startDate": "2025-01-01T00:00:00Z",
+              "endDate": "2027-12-31T00:00:00Z"
+            }
+          ]
+        }
+      ],
       "land": {
         "parcels": [
           {
