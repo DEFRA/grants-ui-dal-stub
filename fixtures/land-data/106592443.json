@@ -1,0 +1,44 @@
+{
+  "data": {
+    "business": {
+      "sbi": "106592443",
+      "organisationId": "6",
+      "land": {
+        "parcels": [
+          {
+            "sheetId": "NY1215",
+            "parcelId": "1016"
+          }
+        ]
+      },
+      "info": {
+        "name": "Watson Grain & Feed",
+        "reference": "1101092443",
+        "email": {
+          "address": "contact+106592443@example.test"
+        },
+        "phone": {
+          "mobile": "+44 7700 900456"
+        },
+        "address": {
+          "line1": "Fellside Farm",
+          "line2": "Penrith",
+          "line3": null,
+          "line4": null,
+          "line5": null,
+          "street": "Fellside Farm",
+          "city": "Penrith",
+          "postalCode": "CA11 9AB",
+          "uprn": null,
+          "buildingName": null,
+          "buildingNumberRange": null,
+          "county": null,
+          "dependentLocality": null,
+          "doubleDependentLocality": null,
+          "flatName": null,
+          "pafOrganisationName": null
+        }
+      }
+    }
+  }
+}
