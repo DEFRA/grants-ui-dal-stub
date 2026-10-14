@@ -2,9 +2,7 @@
   {
     "id": "COUNTRYSIDE_STEWARDSHIP_APPLICATIONS",
     "level": "SUBMIT",
-    "functions": [
-      "Submit CS Application"
-    ]
+    "functions": ["Submit CS Application"]
   },
   {
     "id": "COUNTRYSIDE_STEWARDSHIP_AGREEMENTS",
