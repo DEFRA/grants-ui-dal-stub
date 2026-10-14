@@ -1,0 +1,31 @@
+{
+  "data": {
+    "business": {
+      "sbi": "106734901",
+      "organisationId": "ORG-106734901",
+      "land": {
+        "parcels": []
+      },
+      "info": {
+        "name": "Generic Farm 106734901",
+        "reference": "0106734901",
+        "email": {
+          "address": "contact+106734901@example.test"
+        },
+        "phone": {
+          "mobile": "07106734901"
+        },
+        "address": {
+          "line1": "64 Main Street",
+          "line2": "Depot",
+          "line3": "Sheffield",
+          "line4": "Suffolk",
+          "line5": "",
+          "street": "Main Street",
+          "city": "Sheffield",
+          "postalCode": "KT14 4FO"
+        }
+      }
+    }
+  }
+}
