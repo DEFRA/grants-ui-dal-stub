@@ -12,5 +12,10 @@
       "Create and edit a CS claim",
       "View CS Claims"
     ]
+  },
+  {
+    "id": "BUSINESS_DETAILS",
+    "level": "FULL_PERMISSION",
+    "functions": []
   }
 ]
