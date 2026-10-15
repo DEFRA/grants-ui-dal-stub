@@ -120,6 +120,21 @@ without agreements returns `agreements: []`; an unknown SBI returns `business: n
 Like the existing stub endpoints, these return fixture data rather than executing
 a general GraphQL schema.
 
+### Business details permission test users
+
+These test users share SBI `106238911` with the Countryside Stewardship
+permission test users. Their CRNs continue the existing sequence and each has
+a customer fixture plus a permission fixture.
+
+| CRN          | `BUSINESS_DETAILS` level |
+| :----------- | :----------------------- |
+| `1062311188` | `FULL_PERMISSION`        |
+| `1062311189` | `MAKE_LEGAL_CHANGES`     |
+| `1062311190` | No permissions (`[]`)    |
+
+The first two users have only the `BUSINESS_DETAILS` group; the third has no
+permission groups. Both levels permit all Grants UI business details actions.
+
 ### CLIG3 Scenario 8
 
 TGC-1580 Scenario 8: when a previous agreement contains an incompatible action
