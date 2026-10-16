@@ -1,0 +1,37 @@
+{
+  "data": {
+    "business": {
+      "sbi": "106541316",
+      "organisationId": "ORG-106541316",
+      "land": {
+        "parcels": []
+      },
+      "info": {
+        "name": "Generic Farm 107356780",
+        "reference": "0107356780",
+        "email": {
+          "address": "contact+107356780@example.test"
+        },
+        "legalStatus": {
+          "type": "Private Limited Company (Ltd)"
+        },
+        "registrationNumbers": {
+          "companiesHouse": "12345678"
+        },
+        "phone": {
+          "mobile": "07107356780"
+        },
+        "address": {
+          "line1": "64 Main Street",
+          "line2": "Depot",
+          "line3": "Sheffield",
+          "line4": "Suffolk",
+          "line5": "",
+          "street": "Main Street",
+          "city": "Sheffield",
+          "postalCode": "BB7 4LQ"
+        }
+      }
+    }
+  }
+}
